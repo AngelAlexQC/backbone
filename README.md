@@ -18,7 +18,7 @@ Use excel file as data source to make api for get zip code's info.
 
 ## Solution Steps:
 
-1. Create script for convert and format data
+1. Create script for convert and save data from excel to json files
 
 The script file is called 'convert-data.js'.
 
