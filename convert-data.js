@@ -27,6 +27,7 @@ Object.keys(result).forEach((key) => {
     stateCount++;
     state.map((item) => {
         const zip_code = item.d_codigo;
+        let objIndex = null;
         if (finalArray.indexOf(zip_code) === -1) {
             finalArray.push({
                 zip_code,
@@ -71,8 +72,10 @@ Object.keys(result).forEach((key) => {
     });
 });
 
-// Save JSON file
+// Save to files
 const fs = require("fs");
-const formattedJson = JSON.stringify(finalArray, null, 2);
-fs.writeFileSync("./data.json", formattedJson);
-console.log("JSON file created");
+for (let i = 0; i < finalArray.length; i++) {
+    const fileName = `./resources/data/${finalArray[i].zip_code}.json`;
+    fs.writeFileSync(fileName, JSON.stringify(finalArray[i]));
+    console.log(`Saved ${fileName}, ${i} of ${finalArray.length}`);
+}
