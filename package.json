@@ -2,8 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "postinstall": "node ./convert-data.js"
+        "build": "vite build"
     },
     "devDependencies": {
         "axios": "^0.25",

@@ -1,0 +1,14 @@
+{
+    "zip_code": "01210",
+    "locality": "CIUDAD DE MEXICO",
+    "federal_entity": { "key": 9, "name": "CIUDAD DE MEXICO", "code": null },
+    "settlements": [
+        {
+            "key": 82,
+            "name": "SANTA FE",
+            "zone_type": "URBANO",
+            "settlement_type": { "name": "Pueblo" }
+        }
+    ],
+    "municipality": { "key": 10, "name": "ALVARO OBREGON" }
+}
